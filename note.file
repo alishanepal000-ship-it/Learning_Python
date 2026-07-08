@@ -1,0 +1,12 @@
+Problem Types
+a> 
+b> Constraint Satisfaction Problem(CSPs)
+    It is a special subset of state-space problems. Instead of finding a path of actions, the goal is to find a state that satisfies all constraints.
+    example: Map coloring, sudoku
+
+
+
+BFS:
+uses Queue
+Based on FIFO
+Traversers along immediate neighbours
