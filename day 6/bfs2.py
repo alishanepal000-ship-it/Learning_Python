@@ -10,15 +10,21 @@ graph = {
 visited = []
 queue = ['A']
 
+path = {'A' : ['A']}
+
+#destination = 'C'
 
 while queue:
     node = queue.pop(0)
-    if node not in visited: 
+    if node not in visited:
         visited.append(node)
         neighbors = graph[node]
-        print(neighbors)
         for neighbor in neighbors:
-            if neighbor not in visited:
+            if neighbor not in visited and neighbor not in queue:
                 queue.append(neighbor)
+                #print(path[neighbor])
+                path[neighbor] = path[node] + [neighbor]
+                print(path[neighbor])
 
-print(visited)
+
+    
