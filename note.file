@@ -10,3 +10,8 @@ BFS:
 uses Queue
 Based on FIFO
 Traversers along immediate neighbours
+
+
+heuristic cost: Estimated distance from current node to destination or goal.
+
+Actual cost g(n): Distance between current node and its neighbouring node.
